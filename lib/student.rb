@@ -10,8 +10,8 @@ class Student
     @location = location
 
     name = student_hash[:name]
-    @location = student_hash[:location]
-    @@all << @name
+    location = student_hash[:location]
+    @@all << name
   end
 
   def self.create_from_collection(students_array)
