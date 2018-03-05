@@ -17,7 +17,6 @@ class Student
     students_array.each do |student|
       @name = student[:name]
       @location = student[:location]
-      student = self
       @@all << @name
     end
 
