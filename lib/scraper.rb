@@ -32,7 +32,7 @@ class Scraper
 
       profile_page.css("div.social-icon-container a").each do |profile|
 
-        profile.attribute("href").value
+        profile.attribute("href").value = link
 
         twitter = profile_page.css("div.social-icon-container a").attribute("href").value
         linkedin = profile_page.css("div.social-icon-container a")[1].attribute("href").value
