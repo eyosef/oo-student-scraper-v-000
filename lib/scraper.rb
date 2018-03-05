@@ -34,8 +34,10 @@ class Scraper
 
         link = profile.attribute("href").value
 
-        if link.include?("twitter")
-          all_profiles[:twitter] = link
+        link.include?("twitter") if all_profiles[:twitter] = link
+        e
+          
+        
 
         twitter = profile_page.css("div.social-icon-container a").attribute("href").value
         linkedin = profile_page.css("div.social-icon-container a")[1].attribute("href").value
