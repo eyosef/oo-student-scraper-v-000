@@ -19,7 +19,7 @@ class Student
     students_array.each do |student|
       students_array[:name]
       students_array[:location]
-    
+    end
 
   end
 
