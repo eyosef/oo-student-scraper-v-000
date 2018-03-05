@@ -8,7 +8,7 @@ class Student
   def initialize(student_hash)
     @name = student_hash[:name]
     @location = student_hash[:location]
-    @first = @name
+    @first = student_hash[:name]
     @@all << @first
     #binding.pry
   end
