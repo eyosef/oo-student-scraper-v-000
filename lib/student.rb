@@ -16,10 +16,12 @@ class Student
 
   def self.create_from_collection(students_array)
 
-    students_array.each do |student|
-      students_array[:name]
-      students_array[:location]
-    end
+    Scraper.scrape_profile_page(profile_url)
+    
+    # students_array.each do |student|
+    #   students_array[:name]
+    #   students_array[:location]
+    # end
 
   end
 
