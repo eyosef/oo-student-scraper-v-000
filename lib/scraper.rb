@@ -29,7 +29,6 @@ class Scraper
 
       all_profiles = {}
 
-
       profile_page.css("div.social-icon-container a").each do |profile|
 
         link = profile.attribute("href").value
