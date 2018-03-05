@@ -17,6 +17,8 @@ class Student
     students_array.each do |student|
             binding.pry
       student = self
+      @name = student[:name]
+      @location = student[:location]
     end
 
     #Scraper.scrape_profile_page(students_array)
