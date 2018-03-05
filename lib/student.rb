@@ -26,7 +26,7 @@ class Student
       @linkedin = student_addtributes[:linkedin]
       @github = student_addtributes[:github]
       @blog = student_addtributes[:blog]
-      @profile_quote
+      @profile_quote = student_addtributes[:profile_quote]
       @bio
     end
 
