@@ -9,7 +9,7 @@ class Student
     @name = student_hash[:name]
     @location = student_hash[:location]
 
-    @@all << @name
+    @@all << student_hash
 
   end
 
