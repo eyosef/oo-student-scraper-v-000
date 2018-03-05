@@ -27,6 +27,8 @@ class Scraper
       html = File.read(open(profile_url))
       profile_page = Nokogiri::HTML(html)
 
+      all_profiles = {}
+
 
       profile_page.css("div.social-icon-container a").each do |profile|
 
@@ -37,8 +39,11 @@ class Scraper
         profile_quote = profile_page.css(".profile-quote").text
         bio = profile_page.css(".details-container p").children.text
 
+<<<<<<< HEAD
         all_profiles = {:twitter => twitter, :linkedin => linkedin, :github => github, :blog => blog, :profile_quote => profile_quote, :bio => bio}
 
+=======
+>>>>>>> 997549c794649490c2efdb244c8786c7277f7eba
         if profile_page.css("div.social-icon-container a").attribute("href").value
           all_profiles[:twitter] = twitter
         end
@@ -57,7 +62,12 @@ class Scraper
         if profile_page.css(".details-container p").children.text
           all_profiles[:bio] = bio
         end
+<<<<<<< HEAD
         #binding.pry
+=======
+
+        all_profiles
+>>>>>>> 997549c794649490c2efdb244c8786c7277f7eba
 
       end
     end
