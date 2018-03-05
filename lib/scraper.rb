@@ -29,8 +29,6 @@ class Scraper
 
       all_profiles = {}
 
-      profile_quote = profile_page.css(".profile-quote").text
-      bio = profile_page.css(".details-container p").children.text
 
       profile_page.css("div.social-icon-container a").each do |profile|
 
