@@ -17,6 +17,7 @@ class Student
     binding.pry
     students_array.each do |student|
       student = self.new
+    end
 
     #Scraper.scrape_profile_page(students_array)
 
