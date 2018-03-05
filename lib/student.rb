@@ -5,7 +5,7 @@ class Student
 
   @@all = []
 
-  def new(student_hash=nil)
+  def initialize(student_hash=nil)
     @name = student_hash[:name]
     @location = student_hash[:location]
     #@first = student_hash[:name]
