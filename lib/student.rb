@@ -25,14 +25,6 @@ class Student
       @@all << student
 
     end
-
-    #Scraper.scrape_profile_page(students_array)
-
-    # students_array.each do |student|
-    #   students_array[:name]
-    #   students_array[:location]
-    # end
-
   end
 
   def add_student_attributes(attributes_hash)
