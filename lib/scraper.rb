@@ -40,8 +40,7 @@ class Scraper
 
         #all_profiles = {:twitter => twitter, :linkedin => linkedin, :github => github, :blog => blog, :profile_quote => profile_quote, :bio => bio}
 
-        if profile_page.css("div.social-icon-container a").attribute("href").value
-          all_profiles[:twitter] = twitter
+        profile_page.css("div.social-icon-container a").attribute("href").value if  all_profiles[:twitter] = twitter
         end
         if profile_page.css("div.social-icon-container a")[1].attribute("href").value
           all_profiles[:linkedin] = linkedin
