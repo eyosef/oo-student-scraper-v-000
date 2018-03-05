@@ -18,7 +18,7 @@ class Student
       @name = student[:name]
       @location = student[:location]
       student = self
-      @@all << student
+      @@all << @name
     end
 
     #Scraper.scrape_profile_page(students_array)
