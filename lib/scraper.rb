@@ -52,8 +52,4 @@ class Scraper
 
     end #method
 
-
-
-
-
 end #class
