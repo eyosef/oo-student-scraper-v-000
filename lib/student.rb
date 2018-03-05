@@ -15,10 +15,10 @@ class Student
 
   def self.create_from_collection(students_array)
     students_array.each do |student|
-            binding.pry
-      student = self
       @name = student[:name]
       @location = student[:location]
+      student = self
+      @@all << student
     end
 
     #Scraper.scrape_profile_page(students_array)
