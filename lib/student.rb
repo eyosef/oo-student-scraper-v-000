@@ -21,7 +21,7 @@ class Student
   end
 
   def add_student_attributes(attributes_hash)
-    attributes_hash.each do |student_attribute|
+
       @twitter = attributes_hash[:twitter]
       binding.pry
       # @linkedin = student_attribute[1]
@@ -30,7 +30,7 @@ class Student
       # @profile_quote = student_attribute[1]
       # @bio = student_attribute[1]
 
-    end
+    
 
   end
 
