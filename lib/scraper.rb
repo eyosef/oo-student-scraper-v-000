@@ -58,11 +58,8 @@ class Scraper
         if profile_page.css(".details-container p").children.text
           all_profiles[:bio] = bio
         end
-
+      end #each
         all_profiles
-
-
-      end #each 
     end #method
 
 
