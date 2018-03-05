@@ -51,6 +51,7 @@ class Scraper
       end #each
         profile_quote = profile_page.css(".profile-quote").text
         bio = profile_page.css(".details-container p").children.text
+        
         all_profiles
 
     end #method
