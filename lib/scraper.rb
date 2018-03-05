@@ -60,7 +60,7 @@ class Scraper
         end
       end #each
         all_profiles
-      
+
     end #method
 
 
