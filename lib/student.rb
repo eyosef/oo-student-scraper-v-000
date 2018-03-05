@@ -22,7 +22,7 @@ class Student
 
   def add_student_attributes(attributes_hash)
     attributes_hash.each do |key, value|
-      output[key] = cleanup(value)
+      key = value
 
       # @linkedin = student_attribute[:linkedin]
       # @github = student_attribute[:github]
