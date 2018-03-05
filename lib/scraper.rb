@@ -37,7 +37,6 @@ class Scraper
 
         twitter = profile_page.css("div.social-icon-container a").attribute("href").value
         linkedin = profile_page.css("div.social-icon-container a")[1].attribute("href").value
-
                         binding.pry
         github = profile_page.css("div.social-icon-container a")[2].attribute("href").value #profile_page.css("div.social-icon-container a")[2].attribute("href").value
         blog = profile_page.css("div.social-icon-container a")[3].attribute("href").value
