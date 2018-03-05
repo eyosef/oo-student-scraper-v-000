@@ -9,6 +9,7 @@ class Student
     @name = student_hash[:name]
     @location = student_hash[:location]
     @first = student_hash[:name]
+    
     @@all << @name
     #binding.pry
   end
