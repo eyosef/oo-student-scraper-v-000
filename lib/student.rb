@@ -17,7 +17,7 @@ class Student
     students_array.each do |student|
       @name = student[:name]
       @location = student[:location]
-      @@all << self
+      @@all << s
       binding.pry
     end
 
