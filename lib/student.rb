@@ -15,13 +15,10 @@ class Student
 
   def self.create_from_collection(students_array)
     students_array.each do |student|
-
       new_student = student.to_a.flatten
       @name = student[:name]
       @location = student[:location]
-
       @name = self.new
-
       @@all << student
 
     end #each iteration
