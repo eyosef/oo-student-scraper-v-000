@@ -7,7 +7,7 @@ class Student
 
   def initialize(student_hash=nil)
     @name = name
-    @location = name
+    @location = location
 
     @@all << self
 
