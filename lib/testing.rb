@@ -6,10 +6,11 @@
 
     @@all = [#<Student:0x00000002ddc730 @location="New York, NY", @name="Alex Patriquin">]
 
-    students_array = [{:name=>"Alex Patriquin", :location=>"New York, NY"},
- {:name=>"Bacon McRib", :location=>"Kansas City, MO"},
- {:name=>"Alisha McWilliams", :location=>"San Francisco, CA"},
- {:name=>"Daniel Fenjves", :location=>"Austin, TX"},
- {:name=>"Arielle Sullivan", :location=>"Chicago, IL"},
- {:name=>"Sushanth Bhaskarab", :location=>"Portland, OR"},
- {:name=>"Sushanth Bhaskarab", :location=>"Portland, OR"}]
+    students_array = 
+           [{:name=>"Alex Patriquin", :location=>"New York, NY"},
+           {:name=>"Bacon McRib", :location=>"Kansas City, MO"},
+           {:name=>"Alisha McWilliams", :location=>"San Francisco, CA"},
+           {:name=>"Daniel Fenjves", :location=>"Austin, TX"},
+           {:name=>"Arielle Sullivan", :location=>"Chicago, IL"},
+           {:name=>"Sushanth Bhaskarab", :location=>"Portland, OR"},
+           {:name=>"Sushanth Bhaskarab", :location=>"Portland, OR"}]
