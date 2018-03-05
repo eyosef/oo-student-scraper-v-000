@@ -17,8 +17,8 @@ class Student
 
     students_array.each do |student|
       # new_student = student.to_a.flatten
-      name = student[:name]
-      location = student[:location]
+      @name = student[:name]
+      @location = student[:location]
       # @name = self.new
       @@all << student
     end #each iteration
