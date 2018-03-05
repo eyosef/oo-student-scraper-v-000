@@ -24,11 +24,11 @@ class Student
 
       @twitter = attributes_hash[:twitter]
 
-      # @linkedin = student_attribute[1]
-      # @github = student_attribute[1]
-      # @blog = student_attribute[1]
-      # @profile_quote = student_attribute[1]
-      # @bio = student_attribute[1]
+      @linkedin = student_attribute[1]
+      @github = student_attribute[1]
+      @blog = student_attribute[1]
+      @profile_quote = student_attribute[1]
+      @bio = student_attribute[1]
 
 
 
