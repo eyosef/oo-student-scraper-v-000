@@ -10,6 +10,7 @@ class Student
     @location = student_hash[:location]
 
     @@all << self
+    binding.pry
 
   end
 
@@ -17,8 +18,8 @@ class Student
     students_array.each do |student|
       @name = student[:name]
       @location = student[:location]
-      @@all << s
-      binding.pry
+      @@all
+
     end
 
     #Scraper.scrape_profile_page(students_array)
