@@ -13,11 +13,6 @@ class Student
 
   end
 
-  # def name
-  #   @name = self.student_hash[:name]
-  #   @@all << @name
-  # end
-
   def self.create_from_collection(students_array)
 
     Scraper.scrape_profile_page(students_array)
