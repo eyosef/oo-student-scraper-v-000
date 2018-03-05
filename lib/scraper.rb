@@ -53,7 +53,7 @@ class Scraper
         bio = profile_page.css(".details-container p").children.text
         all_profiles[:profile_quote] = profile_quote
         all_profiles[:bio] = bio
-        
+
         all_profiles
 
     end #method
