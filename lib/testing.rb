@@ -6,8 +6,8 @@
 
     @@all = [#<Student:0x00000002ddc730 @location="New York, NY", @name="Alex Patriquin">]
 
-  
-    attributes_hash = 
+
+    attributes_hash =
 
     {:twitter=>"someone@twitter.com",
      :linkedin=>"someone@linkedin.com",

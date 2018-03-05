@@ -17,7 +17,7 @@ class Student
 
     students_array.each do |student|
       student = self.new(student)
-      @@all << student
+
     end #each iteration
   end
 
