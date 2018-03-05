@@ -18,6 +18,8 @@ class Student
     students_array.each do |student|
       @name = student[:name]
       @location = student[:location]
+      @name = self.new
+
       @@all << student
 
     end
