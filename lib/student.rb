@@ -11,7 +11,7 @@ class Student
     @first = student_hash[:name]
 
     @@all << @name
-    
+
   end
 
   def self.create_from_collection(students_array)
