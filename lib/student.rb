@@ -29,9 +29,6 @@ class Student
       @blog = student_attribute[:blog]
       @profile_quote = student_attribute[:profile_quote]
       @bio = student_attribute[:bio]
-
-
-
   end
 
   def self.all
