@@ -38,6 +38,7 @@ class Scraper
                         binding.pry
         github = profile_page.css("div.social-icon-container a")[2].attribute("href").value #profile_page.css("div.social-icon-container a")[2].attribute("href").value
         blog = profile_page.css("div.social-icon-container a")[3].attribute("href").value
+
         profile_quote = profile_page.css(".profile-quote").text
         bio = profile_page.css(".details-container p").children.text
 
