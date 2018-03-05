@@ -11,6 +11,7 @@ class Student
     @first = student_hash[:name]
 
     @@all << @name
+    binding.pry
 
   end
 
