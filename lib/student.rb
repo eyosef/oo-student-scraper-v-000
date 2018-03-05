@@ -10,6 +10,8 @@ class Student
     @location = student_hash[:location]
     @first = student_hash[:name]
 
+    @@all << @name
+
   end
 
   def name
