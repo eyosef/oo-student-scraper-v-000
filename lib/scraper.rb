@@ -51,8 +51,6 @@ class Scraper
         end
         if profile_page.css("div.social-icon-container a")[3].attribute("href").value
           all_profiles[:blog] = blog
-          all_profiles
-          binding.pry
         end
         if profile_page.css(".profile-quote").text
           all_profiles[:profile_quote] = profile_quote
@@ -60,6 +58,9 @@ class Scraper
         if profile_page.css(".details-container p").children.text
           all_profiles[:bio] = bio
         end
+
+        all_profiles
+        binding.pry
 
 
       end
