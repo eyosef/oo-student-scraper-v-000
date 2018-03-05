@@ -24,7 +24,7 @@ class Student
 
       @@all << student
 
-    end
+    end #each iteration
   end
 
   def add_student_attributes(attributes_hash)
