@@ -29,7 +29,6 @@ class Scraper
 
       all_profiles = {}
 
-
       profile_page.css("div.social-icon-container a").each do |profile|
 
         twitter = profile_page.css("div.social-icon-container a").attribute("href").value
@@ -39,11 +38,8 @@ class Scraper
         profile_quote = profile_page.css(".profile-quote").text
         bio = profile_page.css(".details-container p").children.text
 
-<<<<<<< HEAD
         all_profiles = {:twitter => twitter, :linkedin => linkedin, :github => github, :blog => blog, :profile_quote => profile_quote, :bio => bio}
 
-=======
->>>>>>> 997549c794649490c2efdb244c8786c7277f7eba
         if profile_page.css("div.social-icon-container a").attribute("href").value
           all_profiles[:twitter] = twitter
         end
