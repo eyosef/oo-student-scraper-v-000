@@ -55,12 +55,12 @@ class Scraper
         #
 
         #all_profiles = {:twitter => twitter, :linkedin => linkedin, :github => github, :blog => blog, :profile_quote => profile_quote, :bio => bio}
-
-        profile_page.css("div.social-icon-container a").attribute("href").value if all_profiles[:twitter] = twitter
-        profile_page.css("div.social-icon-container a")[1].attribute("href").value if all_profiles[:linkedin] = linkedin
-        profile_page.css("div.social-icon-container a")[2].attribute("href").value if all_profiles[:github] = github
-        profile_page.css("div.social-icon-container a")[3].attribute("href").value if all_profiles[:blog] = blog
-        # DELETE profile_page.css(".profile-quote").text if all_profiles[:profile_quote] = profile_quote
+        # 
+        # profile_page.css("div.social-icon-container a").attribute("href").value if all_profiles[:twitter] = twitter
+        # profile_page.css("div.social-icon-container a")[1].attribute("href").value if all_profiles[:linkedin] = linkedin
+        # profile_page.css("div.social-icon-container a")[2].attribute("href").value if all_profiles[:github] = github
+        # profile_page.css("div.social-icon-container a")[3].attribute("href").value if all_profiles[:blog] = blog
+        # # DELETE profile_page.css(".profile-quote").text if all_profiles[:profile_quote] = profile_quote
         # DELETE profile_page.css(".details-container p").children.text if all_profiles[:bio] = bio
       end #each
         profile_quote = profile_page.css(".profile-quote").text
