@@ -28,7 +28,7 @@ class Student
       # @blog = student_attribute[1]
       # @profile_quote = student_attribute[1]
       # @bio = student_attribute[1]
-  
+
     end
 
   end
