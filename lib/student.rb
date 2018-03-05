@@ -24,11 +24,11 @@ class Student
 
       @twitter = attributes_hash[:twitter]
 
-      @linkedin = student_attribute[:linkedin]
-      @github = student_attribute[:github]
-      @blog = student_attribute[:blog]
-      @profile_quote = student_attribute[:profile_quote]
-      @bio = student_attribute[:bio]
+      @linkedin = attributes_hash[:linkedin]
+      @github = attributes_hash[:github]
+      @blog = attributes_hash[:blog]
+      @profile_quote = attributes_hash[:profile_quote]
+      @bio = attributes_hash[:bio]
   end
 
   def self.all
