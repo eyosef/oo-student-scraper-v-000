@@ -60,6 +60,7 @@ class Scraper
         end
 
         all_profiles
+        binding.pry
 
       end
     end
