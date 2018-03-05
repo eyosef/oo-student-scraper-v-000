@@ -15,6 +15,9 @@ class Student
 
   end
 
+  def name
+  end
+
   def self.create_from_collection(students_array)
 
     Scraper.scrape_profile_page(students_array)
