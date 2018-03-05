@@ -12,7 +12,7 @@ class Student
 
   end
 
-  def name(student_hash)
+  def name
     @name = student_hash[:name]
     @@all << name
   end
