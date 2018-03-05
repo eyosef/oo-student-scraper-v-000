@@ -49,6 +49,8 @@ class Scraper
         profile_page.css(".profile-quote").text if all_profiles[:profile_quote] = profile_quote
         profile_page.css(".details-container p").children.text if all_profiles[:bio] = bio
       end #each
+        profile_quote = profile_page.css(".profile-quote").text
+        bio = profile_page.css(".details-container p").children.text
         all_profiles
 
     end #method
