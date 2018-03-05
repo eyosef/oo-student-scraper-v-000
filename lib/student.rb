@@ -18,6 +18,7 @@ class Student
       @name = student[:name]
       @location = student[:location]
       student = self.new
+      binding.pry
     end
 
     #Scraper.scrape_profile_page(students_array)
