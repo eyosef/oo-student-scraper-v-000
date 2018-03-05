@@ -42,8 +42,8 @@ class Scraper
 
         profile_page.css("div.social-icon-container a").attribute("href").value if all_profiles[:twitter] = twitter
         profile_page.css("div.social-icon-container a")[1].attribute("href").value if all_profiles[:linkedin] = linkedin
+                binding.pry
         profile_page.css("div.social-icon-container a")[2].attribute("href").value if all_profiles[:github] = github
-        binding.pry
         profile_page.css("div.social-icon-container a")[3].attribute("href").value if all_profiles[:blog] = blog
         profile_page.css(".profile-quote").text if all_profiles[:profile_quote] = profile_quote
         profile_page.css(".details-container p").children.text if all_profiles[:bio] = bio
