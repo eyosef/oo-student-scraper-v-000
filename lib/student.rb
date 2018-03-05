@@ -17,7 +17,7 @@ class Student
     students_array.each do |student|
       @name = student[:name]
       @location = student[:location]
-      @@all << @name
+
     end
 
     #Scraper.scrape_profile_page(students_array)
