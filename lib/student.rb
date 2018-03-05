@@ -17,7 +17,7 @@ class Student
     students_array.each do |student|
       new_student = student.to_a.flatten
 
-                      binding.pry
+
 
       @name = student[:name]
       @location = student[:location]
