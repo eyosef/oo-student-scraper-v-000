@@ -15,6 +15,8 @@ class Student
 
   def self.create_from_collection(students_array)
     students_array.each do |student|
+      student.to_a.flatten
+
       @name = student[:name]
       @location = student[:location]
                 binding.pry
