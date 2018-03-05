@@ -58,12 +58,8 @@ class Scraper
         if profile_page.css(".details-container p").children.text
           all_profiles[:bio] = bio
         end
-<<<<<<< HEAD
-        #binding.pry
-=======
 
         all_profiles
->>>>>>> 997549c794649490c2efdb244c8786c7277f7eba
 
       end
     end
