@@ -40,23 +40,12 @@ class Scraper
 
         #all_profiles = {:twitter => twitter, :linkedin => linkedin, :github => github, :blog => blog, :profile_quote => profile_quote, :bio => bio}
 
-        profile_page.css("div.social-icon-container a").attribute("href").value if  all_profiles[:twitter] = twitter
-        end
-        if profile_page.css("div.social-icon-container a")[1].attribute("href").value
-          all_profiles[:linkedin] = linkedin
-        end
-        if profile_page.css("div.social-icon-container a")[2].attribute("href").value
-          all_profiles[:github] = github
-        end
-        if profile_page.css("div.social-icon-container a")[3].attribute("href").value
-          all_profiles[:blog] = blog
-        end
-        if profile_page.css(".profile-quote").text
-          all_profiles[:profile_quote] = profile_quote
-        end
-        if profile_page.css(".details-container p").children.text
-          all_profiles[:bio] = bio
-        end
+        profile_page.css("div.social-icon-container a").attribute("href").value if all_profiles[:twitter] = twitter
+        profile_page.css("div.social-icon-container a")[1].attribute("href").value if all_profiles[:linkedin] = linkedin
+        profile_page.css("div.social-icon-container a")[2].attribute("href").value if all_profiles[:github] = github
+        profile_page.css("div.social-icon-container a")[3].attribute("href").value if all_profiles[:blog] = blog
+        profile_page.css(".profile-quote").text if all_profiles[:profile_quote] = profile_quote
+        profile_page.css(".details-container p").children.text if all_profiles[:bio] = bio
       end #each
         all_profiles
 
